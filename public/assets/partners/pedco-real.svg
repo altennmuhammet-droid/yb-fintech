@@ -1,0 +1,11 @@
+<svg width="240" height="70" viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(15, 12)">
+    <rect width="46" height="46" fill="#047857" rx="2"/>
+    <path d="M23 10L35 23L23 36L11 23L23 10Z" fill="#F59E0B"/>
+    <circle cx="23" cy="23" r="5" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(72, 24)">
+    <text x="0" y="17" font-family="'Inter', -apple-system, sans-serif" font-size="22" font-weight="900" fill="#047857" letter-spacing="2">PEDCO</text>
+    <text x="0" y="30" font-family="'Inter', -apple-system, sans-serif" font-size="7.5" font-weight="700" fill="#B45309" letter-spacing="2">PETROLEUM EQUIPMENT &amp; DEV CO</text>
+  </g>
+</svg>

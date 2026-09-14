@@ -1,0 +1,102 @@
+@import './fonts.css';
+@import './webflow.css';
+
+/* Base Fonts & Resets */
+:root {
+  --primary-font: 'Instrument Sans', sans-serif;
+  --serif-font: 'Instrument Serif', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Offset sticky navbar for anchor jumps */
+.anchor, section[id] {
+  scroll-margin-top: 110px;
+}
+
+/* Sticky Navbar Position */
+.navbar-logo-left {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+}
+
+/* Continuous Logo Marquee */
+.logo-slider {
+  display: flex !important;
+  overflow: hidden !important;
+  user-select: none;
+  width: 100%;
+}
+
+.logo-slider-track {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 60px;
+  animation: scrollLogos 25s linear infinite;
+  padding: 10px 0;
+}
+
+@keyframes scrollLogos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.logo-slider-track:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive Navbar & Mobile Drawer */
+@media (max-width: 991px) {
+  .menu-button-3 {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-menu-wrapper-2:not(.w--open) {
+    display: none !important;
+  }
+
+  .nav-menu-wrapper-2.w--open {
+    display: block !important;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 20px;
+    right: 20px;
+    z-index: 99999;
+  }
+
+  .nav-menu-two {
+    background-color: #ffffff !important;
+    border-radius: 20px !important;
+    padding: 24px 20px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .nav-menu-two li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+}

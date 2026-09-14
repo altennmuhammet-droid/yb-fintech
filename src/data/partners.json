@@ -1,0 +1,209 @@
+[
+  {
+    "id": "bts-partners",
+    "name": "BTS & Partners",
+    "category": "Legal Partners",
+    "url": "https://www.btsgrp.com",
+    "desc": "Leading Fintech, IT & Digital Assets Legal Counsel",
+    "color": "#0A2540",
+    "logo": "/assets/partners/bts-partners-real.svg"
+  },
+  {
+    "id": "ai4sec",
+    "name": "AI4SEC",
+    "category": "Identity Partners",
+    "url": "https://ai4sec.eu",
+    "desc": "Decentralized Identity, AI Security & European Compliance",
+    "color": "#1E3A8A",
+    "logo": "/assets/partners/ai4sec-dark.svg"
+  },
+  {
+    "id": "paymio",
+    "name": "Paymio",
+    "category": "Tech Partners",
+    "url": "https://www.paymio.com.tr",
+    "desc": "Next-Generation Digital Payment & Financial Infrastructure",
+    "color": "#6366F1",
+    "logo": "/assets/partners/paymio-real.png"
+  },
+  {
+    "id": "mars-data-center",
+    "name": "Mars Data Center",
+    "category": "Tech Partners",
+    "url": "https://marsdatacenter.com",
+    "desc": "Tier 3+ High-Security Cloud & Sovereign Data Infrastructure",
+    "color": "#DC2626",
+    "logo": "/assets/partners/mars-data-center-dark.svg"
+  },
+  {
+    "id": "linkedeep",
+    "name": "Linkedeep",
+    "category": "Tech Partners",
+    "url": "https://linkedeep.com",
+    "desc": "Deep Tech & Advanced AI Computer Vision Solutions",
+    "color": "#2563EB",
+    "logo": "/assets/partners/linkedeep-dark.svg"
+  },
+  {
+    "id": "cyi",
+    "name": "CYI",
+    "category": "Tech Partners",
+    "url": "https://www.cyi.com.tr",
+    "desc": "Enterprise Cloud Architecture & Systems Engineering",
+    "color": "#0D9488",
+    "logo": "/assets/partners/cyi-real.png"
+  },
+  {
+    "id": "cyi-ops",
+    "name": "CYI Ops",
+    "category": "Tech Partners",
+    "url": "https://www.cyiops.co.uk",
+    "desc": "UK-based Global DevOps & Infrastructure Operations",
+    "color": "#0284C7",
+    "logo": "/assets/partners/cyi-ops-real.png"
+  },
+  {
+    "id": "buser-lab",
+    "name": "Buser Lab",
+    "category": "Tech Partners",
+    "url": "https://www.buserlab.com",
+    "desc": "Advanced Laboratory Engineering & Applied Tech",
+    "color": "#7C3AED",
+    "logo": "/assets/partners/buser-lab-real.png"
+  },
+  {
+    "id": "aks-yatirim",
+    "name": "AKS Yatırım",
+    "category": "Liquidity Partners",
+    "url": "https://aksyatirim.com",
+    "desc": "Private Capital, Portfolio Structuring & Liquidity Deployment",
+    "color": "#B45309",
+    "logo": "/assets/partners/aks-yatirim-real.png"
+  },
+  {
+    "id": "media-store",
+    "name": "MediaStore",
+    "category": "Advisory",
+    "url": "https://www.mediastore.com.tr",
+    "desc": "Strategic Corporate Communications & Global Media Positioning",
+    "color": "#EA580C",
+    "logo": "/assets/partners/media-store-real.png"
+  },
+  {
+    "id": "arkhe-group",
+    "name": "Arkhe Group",
+    "category": "Advisory",
+    "url": "https://arkhegroup.com.tr",
+    "desc": "Strategic Architecture, Urban Development & Advisory",
+    "color": "#166534",
+    "logo": "/assets/partners/arkhe-group-real.png"
+  },
+  {
+    "id": "parlange",
+    "name": "Parlange",
+    "category": "Advisory",
+    "url": "https://www.parlange.co",
+    "desc": "Institutional Strategy & Innovation Governance Consultancy",
+    "color": "#4338CA",
+    "logo": "/assets/partners/parlange-real.png"
+  },
+  {
+    "id": "awa-enerji",
+    "name": "Awa Enerji",
+    "category": "Communities",
+    "url": "http://www.awaenerji.com.tr",
+    "desc": "Renewable Power Generation & Clean Energy Assets",
+    "color": "#059669",
+    "logo": "/assets/partners/awa-enerji-real.png"
+  },
+  {
+    "id": "avva-energy",
+    "name": "Avva Energy",
+    "category": "Communities",
+    "url": "https://avvaenergy.com",
+    "desc": "Clean Energy Trading & Sustainability Infrastructure",
+    "color": "#0284C7",
+    "logo": "/assets/partners/avva-energy-real.svg"
+  },
+  {
+    "id": "360-enerji",
+    "name": "360 Enerji",
+    "category": "Communities",
+    "url": "https://www.360enerji.com.tr",
+    "desc": "Solar & Wind Renewable Energy Project Developer",
+    "color": "#F59E0B",
+    "logo": "/assets/partners/360-enerji-real.png"
+  },
+  {
+    "id": "pedco",
+    "name": "PEDCO",
+    "category": "Communities",
+    "url": "https://pedco.com.sa",
+    "desc": "Saudi Arabian Petroleum & Energy Engineering Corporation",
+    "color": "#047857",
+    "logo": "/assets/partners/pedco-real.svg"
+  },
+  {
+    "id": "buser-project",
+    "name": "Buser Project",
+    "category": "Communities",
+    "url": "https://www.buserproject.com",
+    "desc": "Global Commercial Architecture & Physical Asset Projects",
+    "color": "#1E293B",
+    "logo": "/assets/partners/buser-project-real.png"
+  },
+  {
+    "id": "buroseren",
+    "name": "Büroseren",
+    "category": "Communities",
+    "url": "https://buroseren.com",
+    "desc": "Commercial & Institutional Real Estate Interior Solutions",
+    "color": "#334155",
+    "logo": "/assets/partners/buroseren-real.png"
+  },
+  {
+    "id": "rukim",
+    "name": "Rukim",
+    "category": "Communities",
+    "url": "https://www.rukim.com.tr",
+    "desc": "Specialty Chemical Commodities & Raw Material Supply Chains",
+    "color": "#0891B2",
+    "logo": "/assets/partners/rukim-real.png"
+  },
+  {
+    "id": "oztreyler",
+    "name": "Öztreyler",
+    "category": "Communities",
+    "url": "https://www.oztreyler.com.tr",
+    "desc": "Heavy Industrial Transport & Logistics Vehicle Manufacturing",
+    "color": "#E11D48",
+    "logo": "/assets/partners/oztreyler-real.png"
+  },
+  {
+    "id": "koroglu-insaat",
+    "name": "Köroğlu İnşaat",
+    "category": "Communities",
+    "url": "https://korogluinsaat.net",
+    "desc": "Infrastructure Construction & Real Estate Development",
+    "color": "#D97706",
+    "logo": "/assets/partners/koroglu-insaat-real.jpg"
+  },
+  {
+    "id": "atlas-tur",
+    "name": "Atlas Tur",
+    "category": "Communities",
+    "url": "https://atlastur.com.tr",
+    "desc": "Commercial Fleet Logistics & Transport Network Management",
+    "color": "#475569",
+    "logo": "/assets/partners/atlastur-real.png"
+  },
+  {
+    "id": "nixon-led",
+    "name": "Nixon LED",
+    "category": "Communities",
+    "url": "http://www.nixonled.com",
+    "desc": "Smart City Lighting & Industrial Energy Efficiency Systems",
+    "color": "#0284C7",
+    "logo": "/assets/partners/nixon-led-real.png"
+  }
+]
