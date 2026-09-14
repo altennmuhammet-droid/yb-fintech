@@ -1,5 +1,6 @@
 import React from 'react';
 import { ContactFooter } from '../components/ContactFooter';
+import { getAssetUrl } from '../utils/assets';
 
 interface MediaCoveragePageProps {
   navigate: (path: string) => void;
@@ -8,7 +9,7 @@ interface MediaCoveragePageProps {
 export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }) => {
   const articles = [
     {
-      image: '/assets/images/news-ypfluz.png',
+      image: getAssetUrl('/assets/images/news-ypfluz.png'),
       media: 'YPF Luz',
       tag: 'Enertoken',
       tagColor: '#2563eb',
@@ -16,7 +17,7 @@ export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }
       link: 'https://www.ypfluz.com/Noticias/NoticiaCompleta/213'
     },
     {
-      image: '/assets/images/news-bunge.png',
+      image: getAssetUrl('/assets/images/news-bunge.png'),
       media: 'Bunge',
       tag: 'T&S Explorer',
       tagColor: '#10b981',
@@ -24,7 +25,7 @@ export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }
       link: 'https://www.bunge.com.br/Press-Releases/Bunge-e-Bangkok-Produce-Merchandising-expandem-parceria-com-tecnologia-blockchain'
     },
     {
-      image: '/assets/images/news-bv.png',
+      image: getAssetUrl('/assets/images/news-bv.png'),
       media: 'TI Inside',
       tag: 'Aura',
       tagColor: '#f59e0b',
@@ -32,7 +33,7 @@ export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }
       link: 'https://tiinside.com.br/es/08/12/2025/banco-bv-lanca-cdca-tokenizado-e-reforca-protagonismo-na-agenda-de-inovacao-e-tokenizacao-de-ativos/'
     },
     {
-      image: '/assets/images/news-globo.png',
+      image: getAssetUrl('/assets/images/news-globo.png'),
       media: 'Globo Rural',
       tag: 'Labs',
       tagColor: '#8b5cf6',
@@ -47,7 +48,7 @@ export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }
       <div
         className="dark-section-background news-template-hero"
         style={{
-          backgroundImage: 'url(/assets/images/news-ypfluz.png)',
+          backgroundImage: `url(${getAssetUrl('/assets/images/news-ypfluz.png')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '480px',
@@ -73,7 +74,7 @@ export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }
             style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: '#ffffff', textDecoration: 'none', fontWeight: 600 }}
           >
             <span className="subheading" style={{ color: '#ffffff' }}>Read more</span>
-            <img src="/assets/images/flecha.png" width="20" alt="Arrow" />
+            <img src={getAssetUrl('/assets/images/flecha.png')} width="20" alt="Arrow" />
           </a>
         </div>
       </div>
@@ -139,7 +140,7 @@ export const MediaCoveragePage: React.FC<MediaCoveragePageProps> = ({ navigate }
                   style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none', color: '#090e24', fontWeight: 600 }}
                 >
                   <span>Read more</span>
-                  <img src="/assets/images/flecha-dark.png" width="16" alt="Arrow" />
+                  <img src={getAssetUrl('/assets/images/flecha-dark.png')} width="16" alt="Arrow" />
                 </a>
               </div>
             </div>

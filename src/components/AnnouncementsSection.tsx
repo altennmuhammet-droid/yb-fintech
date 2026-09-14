@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/assets';
 
 interface AnnouncementsProps {
   navigate: (path: string) => void;
@@ -29,7 +30,7 @@ export const AnnouncementsSection: React.FC<AnnouncementsProps> = ({ navigate })
               className="button-link w-inline-block"
             >
               <h4 className="body-base dark">Read more</h4>
-              <img src="/assets/images/flecha-dark.png" loading="lazy" width="20" alt="" className="image-67"/>
+              <img src={getAssetUrl('/assets/images/flecha-dark.png')} loading="lazy" width="20" alt="" className="image-67"/>
             </a>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
+import { getAssetUrl } from '../utils/assets';
 
 export const ContactFooter: React.FC = () => {
   const { lang } = useLanguage();
@@ -143,7 +144,7 @@ export const ContactFooter: React.FC = () => {
           <div className="logo-and-legal" style={{ marginTop: '32px' }}>
             <img
               loading="lazy"
-              src={lang === 'TR' ? '/assets/logos/yb-logo-tr-white.svg' : '/assets/logos/yb-logo-en-white.svg'}
+              src={getAssetUrl(lang === 'TR' ? '/assets/logos/yb-logo-tr-white.svg' : '/assets/logos/yb-logo-en-white.svg')}
               alt="YB Uluslararası Finansal Danışmanlık"
               style={{
                 height: '52px',

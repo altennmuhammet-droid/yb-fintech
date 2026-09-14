@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/assets';
 
 export const TrustSlider: React.FC = () => {
   const logos = [
@@ -24,7 +25,7 @@ export const TrustSlider: React.FC = () => {
           {logos.map((item, idx) => (
             <div key={`a-${idx}`} className="logo-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: '140px' }}>
               <img
-                src={item.src}
+                src={getAssetUrl(item.src)}
                 loading="lazy"
                 alt={item.name}
                 style={{
@@ -42,7 +43,7 @@ export const TrustSlider: React.FC = () => {
           {logos.map((item, idx) => (
             <div key={`b-${idx}`} className="logo-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: '140px' }}>
               <img
-                src={item.src}
+                src={getAssetUrl(item.src)}
                 loading="lazy"
                 alt={item.name}
                 style={{

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
+import { getAssetUrl } from '../utils/assets';
 
 export const Stats: React.FC = () => {
   const { lang } = useLanguage();
@@ -19,7 +20,7 @@ export const Stats: React.FC = () => {
           </div>
           <a href="#solutions" className="button-link w-inline-block">
             <h4 className="body-base">{t.stat1Cta}</h4>
-            <img src="/assets/images/flecha.png" loading="lazy" width="20" alt="" className="image-67"/>
+            <img src={getAssetUrl('/assets/images/flecha.png')} loading="lazy" width="20" alt="" className="image-67"/>
           </a>
         </div>
       </div>
@@ -32,7 +33,7 @@ export const Stats: React.FC = () => {
           </div>
           <a href="#ecosystem" className="button-link w-inline-block">
             <h4 className="body-base">{t.stat3Cta}</h4>
-            <img src="/assets/images/flecha.png" loading="lazy" width="20" alt="" className="image-67"/>
+            <img src={getAssetUrl('/assets/images/flecha.png')} loading="lazy" width="20" alt="" className="image-67"/>
           </a>
         </div>
         <div className="numbers-card height-100" style={{ borderRadius: '0px' }}>
@@ -51,14 +52,14 @@ export const Stats: React.FC = () => {
           </div>
           <a href="#about" className="button-link w-inline-block">
             <h4 className="body-base">{t.stat5Cta}</h4>
-            <img src="/assets/images/flecha.png" loading="lazy" width="20" alt="" className="image-67"/>
+            <img src={getAssetUrl('/assets/images/flecha.png')} loading="lazy" width="20" alt="" className="image-67"/>
           </a>
         </div>
         <div className="numbers-card color-dark" style={{ borderRadius: '0px' }}>
           <div className="numbers-text-wrapper">
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '14px' }}>
-              <img src="/assets/partners/bts-partners-real.svg" loading="lazy" alt="BTS & Partners" style={{ height: '28px', filter: 'brightness(0) invert(1)' }}/>
-              <img src="/assets/partners/paymio-real.png" loading="lazy" alt="Paymio" style={{ height: '28px', filter: 'brightness(0) invert(1)' }}/>
+              <img src={getAssetUrl('/assets/partners/bts-partners-real.svg')} loading="lazy" alt="BTS & Partners" style={{ height: '28px', filter: 'brightness(0) invert(1)' }}/>
+              <img src={getAssetUrl('/assets/partners/paymio-real.png')} loading="lazy" alt="Paymio" style={{ height: '28px', filter: 'brightness(0) invert(1)' }}/>
             </div>
             <h4 className="subheading">{t.stat6Desc}</h4>
           </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Lottie from 'lottie-react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
+import { getAssetUrl } from '../utils/assets';
 
 export const TechnologySection: React.FC = () => {
   const { lang } = useLanguage();
@@ -9,7 +10,7 @@ export const TechnologySection: React.FC = () => {
   const [animationData, setAnimationData] = useState<any>(null);
 
   useEffect(() => {
-    fetch('/assets/animations/partners-illustration.json')
+    fetch(getAssetUrl('/assets/animations/partners-illustration.json'))
       .then((res) => res.json())
       .then((data) => setAnimationData(data))
       .catch((err) => console.error('Failed to load Lottie animation:', err));
@@ -38,7 +39,7 @@ export const TechnologySection: React.FC = () => {
             {techPartners.map((tp, idx) => (
               <div key={idx} className="logo-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
-                  src={tp.src}
+                  src={getAssetUrl(tp.src)}
                   loading="lazy"
                   alt={tp.name}
                   style={{

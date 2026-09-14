@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
+import { getAssetUrl } from '../utils/assets';
 
 interface HeaderProps {
   currentPath?: string;
@@ -69,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath = '/', navigate }) =
               style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
             >
               <img
-                src={lang === 'TR' ? '/assets/logos/yb-logo-tr.svg' : '/assets/logos/yb-logo-en.svg'}
+                src={getAssetUrl(lang === 'TR' ? '/assets/logos/yb-logo-tr.svg' : '/assets/logos/yb-logo-en.svg')}
                 alt="YB Uluslararası Finansal Danışmanlık"
                 style={{
                   height: '52px',

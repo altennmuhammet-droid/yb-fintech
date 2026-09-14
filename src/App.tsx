@@ -6,19 +6,28 @@ import { PressReleasePage } from './pages/PressReleasePage';
 import { LanguageProvider } from './context/LanguageContext';
 
 export const App: React.FC = () => {
-  const [currentPath, setCurrentPath] = useState(window.location.pathname || '/');
+  const getCleanPath = () => {
+    if (window.location.hash) {
+      const hash = window.location.hash.replace(/^#/, '');
+      return hash.startsWith('/') ? hash : `/${hash}`;
+    }
+    return '/';
+  };
+
+  const [currentPath, setCurrentPath] = useState(getCleanPath);
 
   useEffect(() => {
-    const handlePopState = () => {
-      setCurrentPath(window.location.pathname || '/');
+    const handleHashChange = () => {
+      setCurrentPath(getCleanPath());
     };
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const navigate = (path: string) => {
-    window.history.pushState({}, '', path);
-    setCurrentPath(path);
+    const targetHash = path.startsWith('/') ? path : `/${path}`;
+    window.location.hash = targetHash;
+    setCurrentPath(targetHash);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

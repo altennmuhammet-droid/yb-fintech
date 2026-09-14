@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import partnersData from '../data/partners.json';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
+import { getAssetUrl } from '../utils/assets';
 
 type Category = 'All' | 'Legal Partners' | 'Identity Partners' | 'Tech Partners' | 'Liquidity Partners' | 'Advisory' | 'Communities';
 
@@ -93,7 +94,7 @@ export const PartnersEcosystemSection: React.FC = () => {
                 justifyContent: 'center'
               }}>
                 <img
-                  src="/assets/partners/paymio-real.png"
+                  src={getAssetUrl('/assets/partners/paymio-real.png')}
                   alt="Paymio"
                   style={{ maxHeight: '36px', width: 'auto', objectFit: 'contain' }}
                 />
@@ -128,7 +129,7 @@ export const PartnersEcosystemSection: React.FC = () => {
             {/* Action Buttons */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
               <a
-                href="/assets/docs/Paymio-Services-Solutions-v1.3.pdf"
+                href={getAssetUrl('/assets/docs/Paymio-Services-Solutions-v1.3.pdf')}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -347,7 +348,7 @@ export const PartnersEcosystemSection: React.FC = () => {
                   border: '1px solid #F1F5F9'
                 }}>
                   <img
-                    src={partner.logo}
+                    src={getAssetUrl(partner.logo)}
                     alt={partner.name}
                     loading="lazy"
                     style={{

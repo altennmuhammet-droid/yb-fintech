@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/assets';
 
 interface NewsProps {
   navigate: (path: string) => void;
@@ -27,7 +28,7 @@ export const NewsSection: React.FC<NewsProps> = ({ navigate }) => {
         <div role="list" className="news-list w-dyn-items">
           {/* Card 1 */}
           <div role="listitem" className="news-item w-dyn-item">
-            <img src="/assets/images/news-ypfluz.png" loading="lazy" alt="" className="news-image"/>
+            <img src={getAssetUrl('/assets/images/news-ypfluz.png')} loading="lazy" alt="" className="news-image"/>
             <div className="text-wrapper-down news">
               <div className="medio-tag">
                 <div className="body-small news-media">YPF Luz</div>
@@ -37,13 +38,13 @@ export const NewsSection: React.FC<NewsProps> = ({ navigate }) => {
             </div>
             <a href="https://www.ypfluz.com/Noticias/NoticiaCompleta/213" target="_blank" rel="noopener noreferrer" className="button-link dark w-inline-block">
               <h4 className="body-base dark">Read more</h4>
-              <img src="/assets/images/flecha-dark.png" loading="lazy" width="20" alt="" className="image-67"/>
+              <img src={getAssetUrl('/assets/images/flecha-dark.png')} loading="lazy" width="20" alt="" className="image-67"/>
             </a>
           </div>
 
           {/* Card 2 */}
           <div role="listitem" className="news-item w-dyn-item">
-            <img src="/assets/images/news-bunge.png" loading="lazy" alt="" className="news-image"/>
+            <img src={getAssetUrl('/assets/images/news-bunge.png')} loading="lazy" alt="" className="news-image"/>
             <div className="text-wrapper-down news">
               <div className="medio-tag">
                 <div className="body-small news-media">Bunge</div>
@@ -53,13 +54,13 @@ export const NewsSection: React.FC<NewsProps> = ({ navigate }) => {
             </div>
             <a href="https://www.bunge.com.br/Press-Releases/Bunge-e-Bangkok-Produce-Merchandising-expandem-parceria-com-tecnologia-blockchain" target="_blank" rel="noopener noreferrer" className="button-link dark w-inline-block">
               <h4 className="body-base dark">Read more</h4>
-              <img src="/assets/images/flecha-dark.png" loading="lazy" width="20" alt="" className="image-67"/>
+              <img src={getAssetUrl('/assets/images/flecha-dark.png')} loading="lazy" width="20" alt="" className="image-67"/>
             </a>
           </div>
 
           {/* Card 3 */}
           <div role="listitem" className="news-item w-dyn-item">
-            <img src="/assets/images/news-bv.png" loading="lazy" alt="" className="news-image"/>
+            <img src={getAssetUrl('/assets/images/news-bv.png')} loading="lazy" alt="" className="news-image"/>
             <div className="text-wrapper-down news">
               <div className="medio-tag">
                 <div className="body-small news-media">TI Inside</div>
@@ -69,7 +70,7 @@ export const NewsSection: React.FC<NewsProps> = ({ navigate }) => {
             </div>
             <a href="https://tiinside.com.br/es/08/12/2025/banco-bv-lanca-cdca-tokenizado-e-reforca-protagonismo-na-agenda-de-inovacao-e-tokenizacao-de-ativos/" target="_blank" rel="noopener noreferrer" className="button-link dark w-inline-block">
               <h4 className="body-base dark">Read more</h4>
-              <img src="/assets/images/flecha-dark.png" loading="lazy" width="20" alt="" className="image-67"/>
+              <img src={getAssetUrl('/assets/images/flecha-dark.png')} loading="lazy" width="20" alt="" className="image-67"/>
             </a>
           </div>
         </div>

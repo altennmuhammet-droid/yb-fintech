@@ -1,5 +1,6 @@
 import React from 'react';
 import { ContactFooter } from '../components/ContactFooter';
+import { getAssetUrl } from '../utils/assets';
 
 interface PressReleasePageProps {
   navigate: (path: string) => void;
@@ -30,7 +31,7 @@ export const PressReleasePage: React.FC<PressReleasePageProps> = ({ navigate }) 
 
         <div style={{ borderRadius: '1.5rem', overflow: 'hidden', marginBottom: '40px' }}>
           <img
-            src="/assets/images/news-ypfluz.png"
+            src={getAssetUrl('/assets/images/news-ypfluz.png')}
             alt="YPF Luz and YB Fintech"
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />
