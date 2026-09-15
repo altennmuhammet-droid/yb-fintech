@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 import { getAssetUrl } from '../utils/assets';
 
-type Category = 'All' | 'Legal Partners' | 'Identity Partners' | 'Tech Partners' | 'Liquidity Partners' | 'Advisory' | 'Communities';
+type Category = 'All' | 'Energy Partners' | 'Tech Partners' | 'Legal Partners' | 'Identity Partners' | 'Advisory' | 'Communities';
 
 export const PartnersEcosystemSection: React.FC = () => {
   const { lang } = useLanguage();
@@ -13,22 +13,22 @@ export const PartnersEcosystemSection: React.FC = () => {
 
   const categories: Category[] = [
     'All',
+    'Energy Partners',
+    'Tech Partners',
     'Legal Partners',
     'Identity Partners',
-    'Tech Partners',
-    'Liquidity Partners',
     'Advisory',
     'Communities'
   ];
 
   const categoryLabels: Record<Category, { TR: string; EN: string }> = {
     'All': { TR: 'Tümü', EN: 'All' },
+    'Energy Partners': { TR: 'Yenilenebilir Enerji', EN: 'Renewable Energy' },
+    'Tech Partners': { TR: 'Teknoloji Ortakları', EN: 'Tech Partners' },
     'Legal Partners': { TR: 'Hukuk Ortakları', EN: 'Legal Partners' },
     'Identity Partners': { TR: 'Kimlik Ortakları', EN: 'Identity Partners' },
-    'Tech Partners': { TR: 'Teknoloji Ortakları', EN: 'Tech Partners' },
-    'Liquidity Partners': { TR: 'Likidite Ortakları', EN: 'Liquidity Partners' },
     'Advisory': { TR: 'Danışmanlık', EN: 'Advisory' },
-    'Communities': { TR: 'Topluluk & Sanayi', EN: 'Communities' },
+    'Communities': { TR: 'Sanayi & Altyapı', EN: 'Industry & Infrastructure' },
   };
 
   const filteredPartners = activeCategory === 'All'

@@ -103,13 +103,13 @@ export const ContactFooter: React.FC = () => {
                 </div>
                 <div>
                   <div style={{ fontWeight: 600, color: '#FFFFFF', marginBottom: '2px' }}>{t.headquarters}</div>
-                  Maslak Mah. Bilim Sok. Sun Plaza No:5/A Kat:14, 34485 Sarıyer / İstanbul
+                  {t.address}
                 </div>
               </div>
 
               {/* Email */}
               <a
-                href="mailto:yavuzboztemir@gmail.com"
+                href="mailto:yb@ybfintech.com"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -135,7 +135,7 @@ export const ContactFooter: React.FC = () => {
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
-                <span>yavuzboztemir@gmail.com</span>
+                <span>yb@ybfintech.com</span>
               </a>
             </div>
           </div>
