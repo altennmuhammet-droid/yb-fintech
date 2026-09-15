@@ -50,8 +50,9 @@ export const ContactFooter: React.FC = () => {
       }
     } catch (err: any) {
       console.error('Form submission error:', err);
-      // Fallback - still show success if it's CORS on activation or set error
-      if (err?.message?.includes('activation') || err?.message?.includes('Confirm')) {
+      // Fallback - still show success if it's activation confirmation
+      const msg = (err?.message || '').toLowerCase();
+      if (msg.includes('activation') || msg.includes('confirm')) {
         setSubmitted(true);
       } else {
         setError(
