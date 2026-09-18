@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
+import { getAssetUrl } from '../utils/assets';
 
 export const AboutLeadershipSection: React.FC = () => {
   const { lang } = useLanguage();
   const t = translations[lang].about;
+  const [showCardModal, setShowCardModal] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowCardModal(false);
+    };
+    if (showCardModal) {
+      window.addEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [showCardModal]);
 
   return (
     <section id="about" style={{
@@ -207,6 +225,109 @@ export const AboutLeadershipSection: React.FC = () => {
                   {t.yavuz.p2}
                 </p>
               </div>
+
+              {/* Official Business Card Preview */}
+              <div style={{
+                marginTop: '26px',
+                padding: '16px',
+                backgroundColor: '#F8FAFC',
+                border: '1px solid #E2E8F0',
+                borderRadius: '0px'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: '12px'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#071D3A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="0"></rect>
+                      <path d="M7 15h10M7 9h4"></path>
+                    </svg>
+                    <span style={{ fontSize: '11px', fontWeight: 800, letterSpacing: '0.8px', textTransform: 'uppercase', color: '#071D3A' }}>
+                      {lang === 'TR' ? 'Resmi Kartvizit' : 'Official Business Card'}
+                    </span>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <button
+                      type="button"
+                      onClick={() => setShowCardModal(true)}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        padding: 0,
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        color: '#2563EB',
+                        cursor: 'pointer',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px'
+                      }}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                      </svg>
+                      <span>{lang === 'TR' ? 'Büyüt' : 'Zoom'}</span>
+                    </button>
+                    <span style={{ color: '#CBD5E1' }}>|</span>
+                    <a
+                      href={getAssetUrl('/assets/cards/yavuz-boztemir-kartvizit.pdf')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        color: '#2563EB',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '3px'
+                      }}
+                    >
+                      <span>PDF ↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Card Image Thumbnail */}
+                <div
+                  onClick={() => setShowCardModal(true)}
+                  style={{
+                    position: 'relative',
+                    cursor: 'pointer',
+                    overflow: 'hidden',
+                    border: '1px solid #CBD5E1',
+                    boxShadow: '0 4px 14px rgba(7, 29, 58, 0.08)',
+                    transition: 'all 0.2s ease',
+                    backgroundColor: '#0A2540'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 8px 22px rgba(7, 29, 58, 0.16)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 14px rgba(7, 29, 58, 0.08)';
+                  }}
+                  title={lang === 'TR' ? 'Kartviziti tam boyutta görüntülemek için tıklayın' : 'Click to view full size'}
+                >
+                  <img
+                    src={getAssetUrl('/assets/cards/yavuz-boztemir-kartvizit.png')}
+                    alt="Yavuz Boztemir Kartvizit"
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      display: 'block',
+                      objectFit: 'contain'
+                    }}
+                  />
+                </div>
+              </div>
             </div>
 
             {/* Competency Badges */}
@@ -396,6 +517,111 @@ export const AboutLeadershipSection: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Business Card Lightbox Modal */}
+      {showCardModal && (
+        <div
+          onClick={() => setShowCardModal(false)}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            backgroundColor: 'rgba(7, 29, 58, 0.88)',
+            backdropFilter: 'blur(8px)',
+            zIndex: 99999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '20px',
+            animation: 'fadeIn 0.2s ease-out'
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              maxWidth: '860px',
+              width: '100%',
+              backgroundColor: '#071D3A',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+              padding: '24px',
+              position: 'relative',
+              boxShadow: '0 24px 64px rgba(0, 0, 0, 0.5)'
+            }}
+          >
+            {/* Modal Header */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: '16px',
+              paddingBottom: '12px',
+              borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+            }}>
+              <div style={{ color: '#FFFFFF', fontSize: '15px', fontWeight: 700 }}>
+                {lang === 'TR' ? 'Yavuz Boztemir — Kurumsal Kartvizit' : 'Yavuz Boztemir — Official Business Card'}
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <a
+                  href={getAssetUrl('/assets/cards/yavuz-boztemir-kartvizit.pdf')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Yavuz_Boztemir_Kartvizit.pdf"
+                  style={{
+                    backgroundColor: '#2563EB',
+                    color: '#FFFFFF',
+                    padding: '6px 14px',
+                    fontSize: '12px',
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>{lang === 'TR' ? 'PDF İndir' : 'Download PDF'}</span>
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setShowCardModal(false)}
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    border: 'none',
+                    color: '#FFFFFF',
+                    width: '32px',
+                    height: '32px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    fontSize: '18px',
+                    fontWeight: 400
+                  }}
+                  aria-label="Close"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Image */}
+            <div style={{
+              backgroundColor: '#FFFFFF',
+              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+              overflow: 'hidden'
+            }}>
+              <img
+                src={getAssetUrl('/assets/cards/yavuz-boztemir-kartvizit.png')}
+                alt="Yavuz Boztemir Kartvizit Full Size"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
