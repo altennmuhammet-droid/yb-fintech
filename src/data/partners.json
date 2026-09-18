@@ -90,20 +90,29 @@
     "logo": "/assets/partners/buser-lab-real.png"
   },
   {
-    "id": "grid-tech",
-    "name": "Grid Technologies",
-    "category": "Tech Partners",
-    "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Yüksek Gerilim & Endüstriyel Şebeke Entegrasyon Sistemleri",
-    "color": "#0F766E",
-    "logo": "/assets/partners/yeo-grid-tech-real.png"
+    "id": "gais-security",
+    "name": "GAIS Security",
+    "category": "Cybersecurity Partners",
+    "url": "https://www.gaissecurity.com",
+    "desc": "TSE Onaylı Sızma Testi, Siber İstihbarat, Tehdit Avcılığı & 7/24 SOC Güvenlik Hizmetleri",
+    "color": "#1E3A8A",
+    "logo": "/assets/partners/gais-security-real.png"
+  },
+  {
+    "id": "malwation",
+    "name": "Malwation",
+    "category": "Cybersecurity Partners",
+    "url": "https://www.malwation.com",
+    "desc": "Zararlı Yazılım Analiz Platformu (Threat.Zone), Otomatik Tehdit Simülasyonu & CDR Güvenlik Mimarisi",
+    "color": "#225AA5",
+    "logo": "/assets/partners/malwation-real.svg"
   },
   {
     "id": "nicat",
     "name": "Ni-Cat",
     "category": "Tech Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Yapay Zekâ Destekli Katot Pil Malzemeleri & İleri Teknoloji",
+    "desc": "Yapay Zekâ Destekli Katot Pil Malzemeleri, Batarya Kimyası & İleri Teknoloji Üretimi",
     "color": "#7E22CE",
     "logo": "/assets/partners/yeo-nicat-real.png"
   },
@@ -112,27 +121,36 @@
     "name": "BrandIT",
     "category": "Tech Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Endüstri 4.0, IoT & Kestirimci Bakım Dijital Çözümleri",
+    "desc": "Endüstri 4.0, IoT Telemetri, Büyük Veri Analitiği & Kestirimci Bakım Yazılımları",
     "color": "#EA580C",
     "logo": "/assets/partners/yeo-brandit-real.png"
-  },
-  {
-    "id": "ion-membranes",
-    "name": "ION Membranes",
-    "category": "Tech Partners",
-    "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Yeşil Enerji, Yakıt Hücreleri & İyon Değişim Membranları",
-    "color": "#0284C7",
-    "logo": "/assets/partners/yeo-ion-membranes-real.png"
   },
   {
     "id": "cebernet",
     "name": "Cebernet",
     "category": "Tech Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Enerji & Teknoloji Alanında Yenilikçi Altyapı Çözümleri",
+    "desc": "Gelişmiş Bilişim Altyapıları, Kurumsal Ağ Mimarileri & Sistem Entegrasyon Çözümleri",
     "color": "#2563EB",
     "logo": "/assets/partners/yeo-cebernet-real.png"
+  },
+  {
+    "id": "grid-tech",
+    "name": "Grid Technologies",
+    "category": "Energy Partners",
+    "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
+    "desc": "Yüksek Gerilim Trafo Merkezleri, Akıllı Şebekeler & Endüstriyel Enerji İletim Sistemleri",
+    "color": "#0F766E",
+    "logo": "/assets/partners/yeo-grid-tech-real.png"
+  },
+  {
+    "id": "ion-membranes",
+    "name": "ION Membranes",
+    "category": "Energy Partners",
+    "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
+    "desc": "Temiz Enerji Yakıt Hücreleri, Hidrojen Teknolojileri & İyon Değişim Membranları",
+    "color": "#0284C7",
+    "logo": "/assets/partners/yeo-ion-membranes-real.png"
   },
   {
     "id": "aks-yatirim",
@@ -148,7 +166,7 @@
     "name": "YEO Teknoloji",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr",
-    "desc": "Global EPC, Yenilenebilir Enerji, Elektrifikasyon, Otomasyon & Dijitalizasyon",
+    "desc": "Küresel EPC, Yenilenebilir Enerji Santralleri, Elektrifikasyon, Şebeke Otomasyonu & Dijital Dönüşüm",
     "color": "#3AAA35",
     "logo": "/assets/partners/yeo-teknoloji-real.png"
   },
@@ -157,7 +175,7 @@
     "name": "Call Energy",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Birleşik Krallık & Uluslararası Yenilenebilir Enerji EPC Hizmetleri",
+    "desc": "Uluslararası & Birleşik Krallık Yenilenebilir Enerji EPC, Danışmanlık ve Proje Yönetimi",
     "color": "#059669",
     "logo": "/assets/partners/yeo-call-energy-real.png"
   },
@@ -166,7 +184,7 @@
     "name": "REAP Batarya",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Gelişmiş Enerji Depolama Sistemleri & Lityum-İyon Batarya Teknolojileri",
+    "desc": "Konteyner Tipi Endüstriyel Enerji Depolama Sistemleri (BESS) & Lityum-İyon Batarya Teknolojileri",
     "color": "#1E3A8A",
     "logo": "/assets/partners/yeo-reap-batarya-real.png"
   },
@@ -175,7 +193,7 @@
     "name": "REY Energy",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Küçük Ölçekli Rüzgar Türbinleri & Hibrit Yenilenebilir Sistemler",
+    "desc": "Küçük & Orta Ölçekli Rüzgar Türbinleri, Mikro-Şebekeler & Hibrit Yenilenebilir Sistemler",
     "color": "#0D9488",
     "logo": "/assets/partners/yeo-rey-energy-real.png"
   },
@@ -184,7 +202,7 @@
     "name": "Mikrohes",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Ekolojik Akarsu Hidroelektrik Enerji Dönüşüm Çözümleri",
+    "desc": "Ekolojik Akarsu Tipi Hidroelektrik Enerji Santralleri & Kompakt Türbin Teknolojileri",
     "color": "#0284C7",
     "logo": "/assets/partners/yeo-mikrohes-real.png"
   },
@@ -193,7 +211,7 @@
     "name": "DEFIC Globe",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Küresel Yenilenebilir Enerji Yatırımları & Anahtar Teslim Proje Geliştirme",
+    "desc": "Uluslararası Yenilenebilir Enerji Yatırımları, Anahtar Teslim Proje Geliştirme & Varlık Yönetimi",
     "color": "#15803D",
     "logo": "/assets/partners/yeo-defic-globe-real.jpg"
   },
@@ -202,7 +220,7 @@
     "name": "Hydronity",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Yeşil Hidrojen Üretimi, Entegrasyonu & Uluslararası Ticareti",
+    "desc": "Yeşil Hidrojen Üretimi, Elektrolizör Sistemleri & Uluslararası Sıfır Emisyonlu Ticaret",
     "color": "#0891B2",
     "logo": "/assets/partners/yeo-hydronity-real.png"
   },
@@ -211,7 +229,7 @@
     "name": "Marinergy",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Yüzer Güneş & Off-Shore Rüzgar Enerji Santralleri",
+    "desc": "Açık Deniz (Off-Shore) Rüzgar Enerjisi & Yüzer Güneş Enerjisi (FPV) Teknolojileri",
     "color": "#2563EB",
     "logo": "/assets/partners/yeo-marinergy-real.png"
   },
@@ -220,7 +238,7 @@
     "name": "Seiso",
     "category": "Energy Partners",
     "url": "https://yeo.com.tr/sirketlerimiz-kurumsal/",
-    "desc": "YEO Grubu - Sürdürülebilir Güneş Enerjisi Teknolojileri & EPC Hizmetleri",
+    "desc": "Endüstriyel & Ticari Güneş Enerjisi Santralleri (GES) EPC Hizmetleri & Çatı Sistemleri",
     "color": "#EAB308",
     "logo": "/assets/partners/yeo-seiso-real.png"
   },

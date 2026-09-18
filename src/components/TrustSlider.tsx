@@ -14,6 +14,8 @@ export const TrustSlider: React.FC = () => {
     { src: '/assets/partners/buser-project-real.png', name: 'Buser Project' },
     { src: '/assets/partners/buroseren-real.png', name: 'Büroseren' },
     { src: '/assets/partners/yeo-teknoloji-real.png', name: 'YEO Teknoloji' },
+    { src: '/assets/partners/gais-security-real.png', name: 'GAIS Security' },
+    { src: '/assets/partners/malwation-real.svg', name: 'Malwation' },
     { src: '/assets/partners/muzeverse-real.png', name: 'Muzeverse' },
     { src: '/assets/partners/rukim-real.png', name: 'Rukim' },
     { src: '/assets/partners/cyi-real.png', name: 'CYI' },

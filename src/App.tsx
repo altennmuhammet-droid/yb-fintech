@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { HomePage } from './pages/HomePage';
 import { MediaCoveragePage } from './pages/MediaCoveragePage';
 import { PressReleasePage } from './pages/PressReleasePage';
@@ -46,6 +47,7 @@ export const App: React.FC = () => {
       <div className="page-wrapper">
         <Header currentPath={currentPath} navigate={navigate} />
         <main>{renderContent()}</main>
+        <FloatingWhatsApp />
       </div>
     </LanguageProvider>
   );

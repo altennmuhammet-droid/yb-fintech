@@ -79,7 +79,7 @@ export const AboutLeadershipSection: React.FC = () => {
           gap: '32px',
           alignItems: 'stretch'
         }}>
-          {/* Card 1: Yavuz Bozkurt - Founder & CEO */}
+          {/* Card 1: Yavuz Boztemir - Founder & CEO */}
           <div style={{
             background: 'linear-gradient(180deg, #FFFFFF 0%, #FAFCFF 100%)',
             borderRadius: '0px',

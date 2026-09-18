@@ -34,7 +34,7 @@ Geleneksel bankacılık ve finansal disiplini modern dağıtık defter (distribu
    - Advisory & Strategic Network: BTS Group, CYI, CYI Operations, Arkhe Group, PEDCO, MediaStore, Ak Yatırım
    - Energy, Industry & Infrastructure Network: AWA Enerji, AVVA Energy, 360 Enerji, Mars Data Center, Linkedeep, Nixon LED, Atlas Tur, Öz Treyler, Köroğlu İnşaat, Buser Project, BuserLab, Buroseren, Rukim, Parlange
 7. **Executive Leadership:**
-   - Yavuz Bozkurt — CEO: 21+ yıllık bankacılık ve kurumsal finans deneyimiyle kurumsal liderlik profili (fotoğrafsız, premium profil tasarımı).
+   - Yavuz Boztemir — CEO: 21+ yıllık bankacılık ve kurumsal finans deneyimiyle kurumsal liderlik profili (fotoğrafsız, premium profil tasarımı).
    - Mustafa Bulan — CTO: Dağıtık sistemler ve kurumsal teknoloji mimarisi lideri (doğrulanmış LinkedIn bağlantısı ile).
 8. **Contact & Footer:**
    - Doğrudan Telefon: +90 507 458 96 44

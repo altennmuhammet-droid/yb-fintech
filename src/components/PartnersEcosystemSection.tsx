@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../context/translations';
 import { getAssetUrl } from '../utils/assets';
 
-type Category = 'All' | 'Energy Partners' | 'Tech Partners' | 'Legal Partners' | 'Identity Partners' | 'Advisory' | 'Communities';
+type Category = 'All' | 'Energy Partners' | 'Tech Partners' | 'Cybersecurity Partners' | 'Legal Partners' | 'Identity Partners' | 'Advisory' | 'Communities';
 
 export const PartnersEcosystemSection: React.FC = () => {
   const { lang } = useLanguage();
@@ -15,6 +15,7 @@ export const PartnersEcosystemSection: React.FC = () => {
     'All',
     'Energy Partners',
     'Tech Partners',
+    'Cybersecurity Partners',
     'Legal Partners',
     'Identity Partners',
     'Advisory',
@@ -25,6 +26,7 @@ export const PartnersEcosystemSection: React.FC = () => {
     'All': { TR: 'Tümü', EN: 'All' },
     'Energy Partners': { TR: 'Yenilenebilir Enerji', EN: 'Renewable Energy' },
     'Tech Partners': { TR: 'Teknoloji Ortakları', EN: 'Tech Partners' },
+    'Cybersecurity Partners': { TR: 'Siber Güvenlik Partnerleri', EN: 'Cybersecurity Partners' },
     'Legal Partners': { TR: 'Hukuk Ortakları', EN: 'Legal Partners' },
     'Identity Partners': { TR: 'Kimlik Ortakları', EN: 'Identity Partners' },
     'Advisory': { TR: 'Danışmanlık', EN: 'Advisory' },
