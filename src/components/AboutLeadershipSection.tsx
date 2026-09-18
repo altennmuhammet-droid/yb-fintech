@@ -94,48 +94,87 @@ export const AboutLeadershipSection: React.FC = () => {
             transition: 'all 0.25s ease'
           }}>
             <div>
-              {/* Header: Executive Monogram & Name */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '28px' }}>
-                <div style={{
-                  width: '64px',
-                  height: '64px',
-                  borderRadius: '0px',
-                  backgroundColor: '#071D3A',
-                  color: '#FFFFFF',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontFamily: 'Instrument Serif, Georgia, serif',
-                  fontSize: '28px',
-                  fontWeight: 700,
-                  boxShadow: '0 4px 12px rgba(7, 29, 58, 0.12)',
-                  flexShrink: 0
-                }}>
-                  YB
+              {/* Header: Executive Monogram, Name & LinkedIn */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '28px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                  <div style={{
+                    width: '64px',
+                    height: '64px',
+                    borderRadius: '0px',
+                    backgroundColor: '#071D3A',
+                    color: '#FFFFFF',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontFamily: 'Instrument Serif, Georgia, serif',
+                    fontSize: '28px',
+                    fontWeight: 700,
+                    boxShadow: '0 4px 12px rgba(7, 29, 58, 0.12)',
+                    flexShrink: 0
+                  }}>
+                    YB
+                  </div>
+
+                  <div>
+                    <div style={{
+                      fontSize: '11px',
+                      fontWeight: 700,
+                      letterSpacing: '1px',
+                      textTransform: 'uppercase',
+                      color: '#2563EB',
+                      marginBottom: '3px'
+                    }}>
+                      {t.yavuz.role}
+                    </div>
+                    <h3 style={{
+                      fontSize: '26px',
+                      fontWeight: 800,
+                      color: '#071D3A',
+                      margin: 0,
+                      lineHeight: 1.2,
+                      fontFamily: 'Instrument Sans, sans-serif'
+                    }}>
+                      {t.yavuz.name}
+                    </h3>
+                  </div>
                 </div>
 
-                <div>
-                  <div style={{
-                    fontSize: '11px',
+                {/* Refined LinkedIn Link */}
+                <a
+                  href="https://www.linkedin.com/in/yavuz-boztemir-9a1308141/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    backgroundColor: '#FFFFFF',
+                    border: '1px solid #CBD5E1',
+                    color: '#0A66C2',
+                    padding: '8px 14px',
+                    borderRadius: '0px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    fontSize: '12px',
                     fontWeight: 700,
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    color: '#2563EB',
-                    marginBottom: '3px'
-                  }}>
-                    {t.yavuz.role}
-                  </div>
-                  <h3 style={{
-                    fontSize: '26px',
-                    fontWeight: 800,
-                    color: '#071D3A',
-                    margin: 0,
-                    lineHeight: 1.2,
-                    fontFamily: 'Instrument Sans, sans-serif'
-                  }}>
-                    {t.yavuz.name}
-                  </h3>
-                </div>
+                    textDecoration: 'none',
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                    transition: 'all 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#0A66C2';
+                    e.currentTarget.style.color = '#FFFFFF';
+                    e.currentTarget.style.borderColor = '#0A66C2';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#FFFFFF';
+                    e.currentTarget.style.color = '#0A66C2';
+                    e.currentTarget.style.borderColor = '#CBD5E1';
+                  }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34M7.86 18.5V10.13H5.06V18.5h2.8z" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
               </div>
 
               {/* Soft Highlight Box */}
